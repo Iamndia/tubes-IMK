@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+.halaman-login{
+  display: flex;
+  justify-content: center;
+  
+  font-family: 'poppins', sans-serif;
+
+  background-image: url('taekwondo.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+
+  padding-top: 5cm;
+}
+
+.login-container{
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: #99bcff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #042331;
+}
+
+/* --------------------halaman admin css------------------ */
+
+.halaman-admin{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    
+}
+.sidebar {
+  overflow: hidden;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 20px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+/*  */
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+} 
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+#check:checked ~ section{
+  margin-left: 0px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+  margin-left: -250px;
+}
+
+img {
+    width: 80px;
+    margin-left: 20px;
+  }
+
+
+.logo{ 
+    background: #042331;
+  } 
+
+.logo2{
+  margin-top: 50px;
+  top: -450px;
+  margin-left: 330px;
+  width: 800px;
+  height: auto;
+
+}
+
+.logo2 img {
+  width: 100%;
+  height: auto;
+}
+.logo3{
+  position: relative;
+  top: -450px;
+  margin-left: 400px;
+  width: 800px;
+  height: auto;
+
+}
+.logo3 img {
+  width: 100%;
+  height: auto;
+}
+
+.data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 220px;
+  margin-top: 40px;
+}
+.data .data-pelatih{
+  border: 1px solid rgb(66, 5, 112);
+  width: 350px;
+  height: 180px;
+  margin-right: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(64, 54, 72);
+ 
+  
+}
+.data .data-pelatih a,i{
+  color: white;
+
+}
+
+.data .data-atlet a,i{
+  color: white;
+}
+.data .data-atlet p{
+  color: white;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.data .data-pelatih p{
+  color: white;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.data .data-atlet{
+  border: 1px solid rgb(66, 5, 112);
+  width: 350px;
+  height: 180px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color:rgb(64, 54, 72);
+
+}
+.data .data-pelatih:hover{
+  box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #fff;
+}
+.data .data-atlet:hover{
+  box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #fff;
+}
+
+/* ---------------------end------------------------------ */
+/*--------------------- profile css------------ */
+.halaman-profil{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.sidebar-profil {
+  overflow: hidden;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  margin-top: 84px;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar-profil header {
+  font-size: 20px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar-profil ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar-profil ul a i{
+  margin-right: 16px;
+}
+/*  */
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+} 
+#check:checked ~ .sidebar-profil{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+#check:checked ~ section{
+  margin-left: 0px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+  margin-left: -250px;
+}
+.logo4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  width: 800px;
+  top: -450px;
+  margin-left: 330px;
+
+}
+.logo4 img {
+  /* position: relative; */
+  width: 100%;
+  height: auto;
+}
+.header{
+  background: #042331;
+  position: fixed;
+  width: 100%;
+}
+
+.biodata {
+  position: absolute;
+  padding: 20px;
+  background: #063146;
+  border-radius: 5px;
+  z-index: 999;
+  margin-left: -390px;
+  top: 0px;
+  color: aliceblue;
+}
+
+.biodata h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.biodata p {
+  font-size: 14px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.maps{
+  position: relative;
+  top: 80px;
+  left: 730px;
+ 
+
+
+}
+/* -----------------------endd----------------- */
+
+/*-------------------- kompetisi css----------- */
+
+.logok{
+  background: #042331;
+  position: fixed;
+  width: 100%;
+}
+.container .riwayat{
+  font-size: 2rem;
+  padding-top: 100px;
+  padding-left: 8cm;
+  box-shadow: #333;
+}
+.sidebark {
+  overflow: hidden;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  margin-top: 84px;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebark header {
+  font-size: 20px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+}
+.sidebark ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebark ul a i{
+  margin-right: 16px;
+}
+
+.container .topnav{
+  float: right;
+  margin-right: 100px;
+  padding-top: 1cm;
+
+}
+
+.container .topnav input[type=text] {
+  font-size: 25px;
+  border-radius: 0.5rem;
+  border : 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
+.container .topnav i{
+    font-size: 15px;
+    color: #333;
+    cursor : pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border : 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
+.container .table_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 55px;
+  margin-top: 120px;
+  
+}
+.container .table_section table{
+  width: 60%;
+}
+.container .table_section table th{
+  background-color: #99bcff;
+}
+.table_section th,
+td {
+  padding: 8px;
+  text-align: center;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+    
+}
+
+.container input[type=submit] {
+  position: fixed;
+  top: 500px;
+  margin-left: 300px;
+  color: white;
+  background-color: #99bcff;
+  width: 200px;
+  font-size: 1rem;
+
+}
+
+.container input[type=submit]:hover{
+  /* background-color: #042331; */
+   box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #fff;
+}
+
+i{
+  cursor: pointer;
+}
+/*--------------------- end ------------------- */
